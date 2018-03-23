@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #behold{
+        width:400px;
+        height:250px;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>CREATION</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+          $('button').click(function(){
+            var name=$('#name').val();
+            var age=$('#age').val();
+            var color1=$('#colorUser').val();
+            var color2=$('#color2').val();
+            var race=$('#race').val();
+            var trans=$('#trans').val();
+            var spec=$('#spec').val();
+            var choice=$('#choice').val();
+            var place=$('#place').val();
+            $('#behold').css('background-color', color1).val(color1);
+            $('#behold').css('color', color2).val(color2);
+            var create= "Your name is "+name+"."+"You are a "+race+" that has been traveling for "+age+" years and can now transform into a "+trans+"."+" You also "+spec+" and constantly crave "+choice+"."+" Well, I guess this means you're free to go now. But be warned, I shall be back!!!!! Meanwhile, enjoy your adventure to "+place+" that I just sent you on!!! HAHAHAHAHA";
+            $('div').html(create);
+          });
+            $('#behold').css('font-family','Times New Roman');
+            
+            
+            
+        });
+       
+    </script>
+  </head>
+  <body>
+  <h2>Hello and Welcome to YOUR DOOM!!!!!!!<br>Just kidding!Please fill out the information below in order to escape</h2>
+  Create a name: <input id="name" value="Pennywise"><br>
+  Years:<input id="age" value="12"><br>
+  Get a hair Color: <input id="colorUser" value="Red"><br>
+  Choose an eye color: <input id="color2" value="White"><br>
+  Don't want to be human? Then choose a differnet race!!<input id="race" value="clown"><br>
+  What do you want to transform into?<input id="trans" value="spider"><br>
+  Want to add any special features??? Go right ahead:<input id="spec" value="sleep with your eyes open"><br>
+  Choose any food or drink:<input id="choice" value="sandwiches"><br>
+  Finally a location:<input id="place" value="Hyrule"><br>
+<button>CREATE :D!</button>
+<div id='behold'>BEHOLD</div>
+  </body>
+</html>
